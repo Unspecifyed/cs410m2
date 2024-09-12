@@ -1,0 +1,58 @@
+   0x0000555555555209 <+0>:	endbr64 
+   0x000055555555520d <+4>:	push   rbp
+   0x000055555555520e <+5>:	mov    rbp,rsp
+   0x0000555555555211 <+8>:	sub    rsp,0x20
+   0x0000555555555215 <+12>:	mov    rax,QWORD PTR fs:0x28
+   0x000055555555521e <+21>:	mov    QWORD PTR [rbp-0x8],rax
+   0x0000555555555222 <+25>:	xor    eax,eax
+=> 0x0000555555555224 <+27>:	mov    DWORD PTR [rbp-0xc],0x1
+   0x000055555555522b <+34>:	lea    rax,[rip+0xdd2]        # 0x555555556004
+   0x0000555555555232 <+41>:	mov    rsi,rax
+   0x0000555555555235 <+44>:	lea    rax,[rip+0x2e04]        # 0x555555558040 <_ZSt4cout@GLIBCXX_3.4>
+   0x000055555555523c <+51>:	mov    rdi,rax
+   0x000055555555523f <+54>:	call   0x5555555550d0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000555555555244 <+59>:	lea    rax,[rbp-0x14]
+   0x0000555555555248 <+63>:	mov    rsi,rax
+   0x000055555555524b <+66>:	lea    rax,[rip+0x2f0e]        # 0x555555558160 <_ZSt3cin@GLIBCXX_3.4>
+   0x0000555555555252 <+73>:	mov    rdi,rax
+   0x0000555555555255 <+76>:	call   0x5555555550b0 <_ZNSirsERi@plt>
+   0x000055555555525a <+81>:	mov    eax,DWORD PTR [rbp-0x14]
+   0x000055555555525d <+84>:	mov    DWORD PTR [rbp-0x10],eax
+   0x0000555555555260 <+87>:	jmp    0x555555555270 <main()+103>
+   0x0000555555555262 <+89>:	mov    eax,DWORD PTR [rbp-0xc]
+   0x0000555555555265 <+92>:	imul   eax,DWORD PTR [rbp-0x10]
+   0x0000555555555269 <+96>:	mov    DWORD PTR [rbp-0xc],eax
+   0x000055555555526c <+99>:	sub    DWORD PTR [rbp-0x10],0x1
+   0x0000555555555270 <+103>:	cmp    DWORD PTR [rbp-0x10],0x0
+   0x0000555555555274 <+107>:	jg     0x555555555262 <main()+89>
+   0x0000555555555276 <+109>:	lea    rax,[rip+0xd98]        # 0x555555556015
+   0x000055555555527d <+116>:	mov    rsi,rax
+   0x0000555555555280 <+119>:	lea    rax,[rip+0x2db9]        # 0x555555558040 <_ZSt4cout@GLIBCXX_3.4>
+   0x0000555555555287 <+126>:	mov    rdi,rax
+   0x000055555555528a <+129>:	call   0x5555555550d0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x000055555555528f <+134>:	mov    rdx,rax
+   0x0000555555555292 <+137>:	mov    eax,DWORD PTR [rbp-0x14]
+   0x0000555555555295 <+140>:	mov    esi,eax
+   0x0000555555555297 <+142>:	mov    rdi,rdx
+   0x000055555555529a <+145>:	call   0x555555555110 <_ZNSolsEi@plt>
+   0x000055555555529f <+150>:	mov    rdx,rax
+   0x00005555555552a2 <+153>:	lea    rax,[rip+0xd7f]        # 0x555555556028
+   0x00005555555552a9 <+160>:	mov    rsi,rax
+   0x00005555555552ac <+163>:	mov    rdi,rdx
+   0x00005555555552af <+166>:	call   0x5555555550d0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x00005555555552b4 <+171>:	mov    rdx,rax
+   0x00005555555552b7 <+174>:	mov    eax,DWORD PTR [rbp-0xc]
+   0x00005555555552ba <+177>:	mov    esi,eax
+   0x00005555555552bc <+179>:	mov    rdi,rdx
+   0x00005555555552bf <+182>:	call   0x555555555110 <_ZNSolsEi@plt>
+   0x00005555555552c4 <+187>:	mov    rdx,QWORD PTR [rip+0x2d05]        # 0x555555557fd0
+   0x00005555555552cb <+194>:	mov    rsi,rdx
+   0x00005555555552ce <+197>:	mov    rdi,rax
+   0x00005555555552d1 <+200>:	call   0x5555555550e0 <_ZNSolsEPFRSoS_E@plt>
+   0x00005555555552d6 <+205>:	mov    eax,0x0
+   0x00005555555552db <+210>:	mov    rdx,QWORD PTR [rbp-0x8]
+   0x00005555555552df <+214>:	sub    rdx,QWORD PTR fs:0x28
+   0x00005555555552e8 <+223>:	je     0x5555555552ef <main()+230>
+   0x00005555555552ea <+225>:	call   0x5555555550f0 <__stack_chk_fail@plt>
+   0x00005555555552ef <+230>:	leave  
+   0x00005555555552f0 <+231>:	ret    

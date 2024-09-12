@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "GDB Debug (Assembly View)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/loop.out",  // Replace with the path to your compiled executable
+            "args": [],  // Optional: arguments for your program
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,  // Set to true if you prefer an external console
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",  // Adjust to your gdb path if needed
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Automatically display current assembly instruction",
+                    "text": "set disassemble-next-line on",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Display CPU registers",
+                    "text": "info registers",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Display current instruction at each step",
+                    "text": "display /i $pc",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build",  // Optional: configure your build task here
+            "postDebugTask": "",
+            "targetArchitecture": "x86_64",  // Adjust based on your architecture
+            "logging": {
+                "trace": true,  // Logs additional trace information, useful for debugging the debugger itself
+                "engineLogging": true
+            }
+        }
+    ]
+}
